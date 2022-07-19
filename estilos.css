@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 300px;
+    padding: 50px;
+    background-image: url(./Multimedia/fondoboca.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+nav a{
+    color: white;
+    padding: 14px 20px;
+    font-size: 20px;
+    text-decoration: none
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    flex: 30px;
+    background-color: beige;
+    padding: 20px;
+}
+
+img {
+    padding: 16px;
+    height: 300px;
+}
+
+.bombonera {
+    padding: 16px;
+}
+
+
+
+
+section{
+    flex: 70%;
+    background-color: beige;
+    padding: 100px;
+    font-family: sans-serif;
+    line-height: 2;
+    flex-wrap: wrap;
+}
+
+footer{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: #243b6e
+}
+
+footer h2 {
+    text-decoration: underline;
+}
+
+ul{
+    color: white;
+    text-align: left;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 700px){
+    nav, .row{
+        flex-direction: column;
+    }
+}
